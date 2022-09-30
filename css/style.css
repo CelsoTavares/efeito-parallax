@@ -39,7 +39,7 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-image: url("../img/paisagen1.jpg");
+  background-image: url("../img/landscape1.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -80,7 +80,7 @@ h2 {
 }
 
 #three {
-  background-image: url("../img/paisagen2.jpg");
+  background-image: url("../img/landscape2.jpg");
 }
 
 footer {
