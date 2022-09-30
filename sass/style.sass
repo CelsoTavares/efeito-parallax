@@ -1,0 +1,98 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: sans-serif
+  scroll-behavior: smooth
+
+.nav 
+  background:#332900
+  display: flex
+  align-items: center
+  height: 60px
+  padding: 1% 5% 
+  justify-content: space-between
+  
+  h1
+    margin-right: 30%
+    color: white
+    font-size: min(20px, 3vw)
+  
+  & >:nth-child(2)
+    color: rgb(240, 202, 132)
+    border-bottom: 1px solid rgb(240, 202, 132)
+  
+  a
+    text-decoration: none
+    color: white
+    font-size: min(14px, 2vw)
+    padding: 1%
+    
+  
+  a:hover
+    color: rgb(240, 202, 132)
+    border-bottom: 1px solid rgb(240, 202, 132)
+    
+#one
+  height: 100vh
+  display: flex
+  flex-flow: column wrap
+  align-items: center
+  background-image: url('../img/paisagen1.jpg')
+  background-position: center 
+  background-size: cover
+  background-attachment: fixed
+
+  p
+    letter-spacing: 1px
+    word-spacing: 2px
+    color: white
+    text-align: left
+    font-size: min(14px, 2vw)
+    line-height: 22px
+    padding: 4%
+
+h2
+  font-size: max(35px, 5vw)
+  color: white
+  padding: 2%
+  text-shadow: 2px 2px 3px #332900
+
+
+.div-one
+  max-width: 280px
+  border-radius: 2% 20% 2% 2%
+  background: rgba(0, 0, 0, 0.4)
+  display: flex
+  position: absolute
+  margin-top: 5%
+  left: 5%
+  top: 20%
+
+#two
+  height: 100vh
+  background: rgb(240, 227, 202, 0.2)
+  display: flex
+  justify-content: center
+
+#three
+  @extend #one
+  background-image: url('../img/paisagen2.jpg')
+
+#four
+  @extend #two
+
+footer
+  @extend .nav
+  justify-content: center
+  color: rgb(240, 202, 132)
+  
+  
+  
+
+
+
+    
+  
+
+
