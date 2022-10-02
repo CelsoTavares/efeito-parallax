@@ -43,11 +43,12 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  scroll-margin-top: 60px;
 }
 #one p, #three p {
   letter-spacing: 1px;
   word-spacing: 2px;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   text-align: left;
   font-size: min(14px, 2vw);
   line-height: 22px;
@@ -67,16 +68,50 @@ h2 {
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   position: absolute;
+  width: 100%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   margin-top: 5%;
   left: 5%;
   top: 20%;
 }
 
+#text::after {
+  content: "|";
+  color: rgb(255, 255, 255);
+  animation: seta 2s infinite;
+}
+
+@keyframes seta {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 #two, #four {
   height: 100vh;
   background: rgba(240, 227, 202, 0.2);
+  text-align: center;
+  border: 1px solid green;
+}
+
+.two-div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  margin: 5%;
+  justify-content: space-between;
+  height: 50%;
+}
+.two-div p {
+  border: 1px solid black;
+  width: 30%;
+  height: 90%;
+}
+.two-div > :nth-child(2) {
+  width: 36%;
+  height: 100%;
 }
 
 #three {

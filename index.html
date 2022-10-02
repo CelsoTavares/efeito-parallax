@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script defer src="script\script.js"></script>
   <title>Efeito Parallax</title>
 </head>
 <body>
@@ -16,28 +18,34 @@
       <a href="#four">FOUR</a>
     </nav>
     <main>
-      <section id="one">
-        <h2>One text</h2>
+      <section  id="one">
+        <h2 data-aos="fade-down">One text</h2>
         <div class="div-one">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt sit dolor velit eum repellat voluptatem, aliquam atque modi, sequi vel eos nam pariatur cupiditate autem tempora alias ea? Alias.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum vitae placeat sapiente ut alias quod corrupti eligendi doloremque inventore recusandae modi atque officia, at, possimus autem quaerat. Veniam, fugiat 
+        <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt sit dolor velit eum repellat voluptatem, aliquam atque modi, sequi vel eos nam pariatur cupiditate autem tempora alias ea? Alias.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum vitae placeat sapiente ut alias quod corrupti eligendi doloremque inventore recusandae modi atque officia, at, possimus autem quaerat. Veniam, fugiat 
         ullam!</p>
       </div>
       </section> 
       
-      <section id="two">
-        <h2>Two text</h2>
+      <section  id="two">
+        <h2 data-aos="fade-right">Two text</h2>
+        <div class="two-div">
+         <p>1</p>
+         <p>2</p>
+         <p>3</p>
+        </div>
       </section>
       
-      <section id="three">
-        <h2>Three text</h2>
+      <section  id="three">
+        <h2 data-aos="fade-left">Three text</h2>
       </section>
         
-      <section id="four">
+      <section data-aos="fade-up" id="four">
         <h2>Four text</h2>
       </section>
     </main>
   <footer>
     All rights reserved
   </footer>
-</body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
 </html>
