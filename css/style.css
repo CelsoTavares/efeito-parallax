@@ -43,7 +43,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  scroll-margin-top: 60px;
 }
 #one p, #three p {
   letter-spacing: 1px;
