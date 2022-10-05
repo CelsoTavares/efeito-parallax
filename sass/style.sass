@@ -15,7 +15,7 @@
   
   h1
     margin-right: 30%
-    color: white
+    color: rgba(255, 255, 255, 0.8)
     font-size: min(20px, 3vw)
   
   & >:nth-child(2)
@@ -24,7 +24,7 @@
   
   a
     text-decoration: none
-    color: white
+    color: rgba(255, 255, 255, 0.8)
     font-size: min(14px, 2vw)
     padding: 1%
     
@@ -54,9 +54,9 @@
 
 h2
   font-size: max(35px, 5vw)
-  color: white
+  color: rgba(255, 255, 255, 0.8)
   padding: 2%
-  text-shadow: 2px 2px 3px #332900
+  text-shadow: 2px 2px 5px #332900
 
 
 .div-one
@@ -85,30 +85,43 @@ h2
     
 #two
   height: 100vh
-  background: rgb(240, 227, 202, 0.2)
+  background: rgb(240, 227, 202, 0.7)
   text-align: center
-  border: 1px solid green
+  
   
   
 .two-div
   display: flex
   align-items: center
-  border: 1px solid red
-  margin: 5% 
+  margin: 100px 5%
   justify-content: space-between
   height: 50%
   
-  p
-    border: 1px solid black
+  div
     width: 30%
     height: 90%
-  
+    border-radius: 5px
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+              
+
+  & >:nth-child(1)
+    
+    background-image: url('../img/landscape3.jpg')
+    background-position: center
+    background-size: cover
+
   & >:nth-child(2)
     
     width: 36%
     height: 100%
-
+    background-image: url('../img/landscape5.jpg')
+    background-position: center
+    background-size: cover
   
+  & >:nth-child(3)
+    background-image: url('../img/landscape4.jpg')
+    background-position: center
+    background-size: cover
    
 
 #three
