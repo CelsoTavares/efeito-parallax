@@ -106,23 +106,36 @@ h2 {
   height: 90%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 2s;
 }
-.two-div > :nth-child(1) {
+.two-div .gallery1 {
   background-image: url("../img/landscape3.jpg");
   background-position: center;
   background-size: cover;
+  filter: grayscale(100);
 }
-.two-div > :nth-child(2) {
+.two-div .gallery2 {
   width: 36%;
   height: 100%;
   background-image: url("../img/landscape5.jpg");
   background-position: center;
   background-size: cover;
+  filter: sepia(100);
 }
-.two-div > :nth-child(3) {
+.two-div .gallery3 {
   background-image: url("../img/landscape4.jpg");
   background-position: center;
   background-size: cover;
+  filter: grayscale(100);
+}
+.two-div .gallery1:hover {
+  filter: grayscale(0);
+}
+.two-div .gallery2:hover {
+  filter: sepia(0);
+}
+.two-div .gallery3:hover {
+  filter: grayscale(0);
 }
 
 #three {
