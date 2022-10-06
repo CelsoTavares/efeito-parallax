@@ -102,27 +102,37 @@ h2
     height: 90%
     border-radius: 5px
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
-              
+    transition: 2s
 
-  & >:nth-child(1)
-    
+  .gallery1
     background-image: url('../img/landscape3.jpg')
     background-position: center
     background-size: cover
-
-  & >:nth-child(2)
+    filter: grayscale(100)
     
+  
+  .gallery2
     width: 36%
     height: 100%
     background-image: url('../img/landscape5.jpg')
     background-position: center
     background-size: cover
-  
-  & >:nth-child(3)
+    filter: sepia(100)
+
+  .gallery3
     background-image: url('../img/landscape4.jpg')
     background-position: center
     background-size: cover
+    filter: grayscale(100)
    
+  .gallery1:hover
+    filter: grayscale(0)
+  
+  .gallery2:hover
+    filter: sepia(0)
+  
+  .gallery3:hover
+    filter: grayscale(0)
 
 #three
   @extend #one
