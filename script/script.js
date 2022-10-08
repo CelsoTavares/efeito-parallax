@@ -14,3 +14,16 @@ function writeText(elemento){
 }
   const write = document.getElementById('text')
   writeText(write)
+
+  var input = document.getElementsByName('rad')
+var i = 0
+setInterval(() =>{
+   
+    i++
+    if(i > 4){
+      i=0
+      input[0].checked = true
+    }else{
+      input[i].checked = true
+}
+},3000 )
