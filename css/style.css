@@ -21,7 +21,7 @@ body {
 }
 .nav h1, footer h1 {
   margin-right: 30%;
-  color: rgb(240, 202, 132);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 3px 3px 8px #0db8ec, 0px 18px 1px #100cf0;
   font-size: min(20px, 3vw);
 }
@@ -31,7 +31,7 @@ body {
 }
 .nav a, footer a {
   text-decoration: none;
-  color: #f7eeee;
+  color: rgba(255, 255, 255, 0.9);
   font-size: min(14px, 3vw);
   font-weight: bold;
   padding: 1%;
@@ -173,7 +173,7 @@ h2 {
 footer {
   font-weight: bold;
   justify-content: center;
-  color: rgb(240, 202, 132);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .top {
