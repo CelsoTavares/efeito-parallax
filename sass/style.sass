@@ -183,98 +183,76 @@ footer
   margin: 0 auto
   align-items: center
   justify-content: space-between
-  padding: 0 1%
+  
+  div
+    border-radius: 10px
+    margin: 0 1%
+    transition: ease-in-out 1s
+    background-size: cover
+    background-position: center
+    min-width: 47%
+    height: 200px
+    min-height: 100px
 
 .div1
   background-image: url("../img/arti.jpg")
-  background-size: cover
-  background-position: center
-  min-width: 50%
-  height: 200px
-  min-height: 100px
-  transition: ease-in-out 1s
  
 .div2
   background-image: url("../img/bertolo.jpg")
-  background-size: cover
-  background-position: center
-  min-width: 50%
-  height: 200px
-  transition: ease-in-out 1s
-  margin: 0 1%
-
+ 
 .div3
   background-image: url("../img/errin.jpg")
-  background-size: cover
-  background-position: center
-  min-width: 50%
-  height: 200px
-  transition: ease-in-out 1s
-  margin-right:  3%
-
+ 
 .div4
   background-image: url("../img/ezra.jpg")
-  background-size: cover
-  background-position: center
-  min-width: 50%
-  height: 200px
-  transition: ease-in-out 1s
-  margin-right:  3%
 
 .div5
   background-image: url("../img/pixabay.jpg")
-  background-size: cover
-  background-position: center
-  min-width: 50%
-  height: 200px
-  transition: ease-in-out 1s
-  
 
 input
   position: absolute
 
 #rad1
-  right: 72%
+  right: 98%
   bottom: 1%
 
 #rad2
-  right: 58%
+  right: 75%
   bottom: 1%
 
 #rad3
-  right: 44%
+  right: 50%
   bottom: 1%
 
 #rad4
-  right: 30%
+  right: 25%
   bottom: 1%
 
 #rad5
-  right: 16%
+  right: 2%
   bottom: 1%
 
 #rad1:checked ~ .div1
   margin-left: -00%
   
 #rad2:checked ~ .div1
-  margin-left: -50%
+  margin-left: -49%
 
 #rad3:checked ~ .div1
-  margin-left: -100%
+  margin-left: -98%
 
 #rad4:checked ~ .div1
-  margin-left: -150%
+  margin-left: -147%
 
 #rad5:checked ~ .div1
-  margin-left: -200%
+  margin-left: -196%
 
 // dimension
 
 #rad1:checked ~ .div1
   min-width: 100%
   height: 50vh
-  margin-right: 3%
-
+  
 #rad2:checked ~ .div2
   min-width: 100%
   height: 50vh
@@ -282,22 +260,13 @@ input
 #rad3:checked ~ .div3
   min-width: 100%
   height: 50vh
-  margin: 0 3%
-
-#rad3:checked ~ .div1
- visibility: hidden
 
 #rad4:checked ~ .div4
   min-width: 100%
   height: 50vh
-
-#rad4:checked ~ .div2
-  visibility: hidden
   
 #rad5:checked ~ .div5
   min-width: 100%
   height: 50vh
 
-#rad5:checked ~ .div3
-   visibility: hidden
 
