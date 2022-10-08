@@ -191,7 +191,7 @@ footer {
   display: flex;
   max-width: 50%;
   min-width: 300px;
-  margin: 0 auto;
+  margin: 5% auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -231,7 +231,7 @@ input {
 }
 
 #rad1 {
-  right: 98%;
+  right: 94%;
   bottom: 1%;
 }
 
