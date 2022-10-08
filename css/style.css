@@ -6,8 +6,13 @@
   scroll-behavior: smooth;
 }
 
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .nav, footer {
-  background: #332900;
+  background: rgba(22, 155, 243, 0.993);
   display: flex;
   align-items: center;
   height: 60px;
@@ -16,7 +21,8 @@
 }
 .nav h1, footer h1 {
   margin-right: 30%;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(240, 202, 132);
+  text-shadow: 3px 3px 8px #0db8ec, 0px 18px 1px #100cf0;
   font-size: min(20px, 3vw);
 }
 .nav > :nth-child(2), footer > :nth-child(2) {
@@ -25,8 +31,9 @@
 }
 .nav a, footer a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: min(14px, 2vw);
+  color: #f7eeee;
+  font-size: min(14px, 3vw);
+  font-weight: bold;
   padding: 1%;
 }
 .nav a:hover, footer a:hover {
@@ -35,7 +42,7 @@
 }
 
 #one, #three {
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -43,6 +50,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  scroll-margin-top: 60px;
 }
 #one p, #three p {
   letter-spacing: 1px;
@@ -56,9 +64,18 @@
 
 h2 {
   font-size: max(35px, 5vw);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   padding: 2%;
   text-shadow: 2px 2px 5px #332900;
+  animation: change 2s linear alternate infinite;
+}
+@keyframes change {
+  0% {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    color: rgba(240, 227, 202, 0.7);
+  }
 }
 
 .div-one {
@@ -90,7 +107,7 @@ h2 {
 }
 #two, #four {
   height: 100vh;
-  background: rgba(240, 227, 202, 0.7);
+  background: rgba(127, 186, 224, 0.7);
   text-align: center;
 }
 
@@ -106,7 +123,7 @@ h2 {
   height: 90%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  transition: 2s;
+  transition: ease-in-out 0.3s;
 }
 .two-div .gallery1 {
   background-image: url("../img/landscape3.jpg");
@@ -130,21 +147,191 @@ h2 {
 }
 .two-div .gallery1:hover {
   filter: grayscale(0);
+  height: 110%;
 }
 .two-div .gallery2:hover {
   filter: sepia(0);
+  height: 110%;
 }
 .two-div .gallery3:hover {
   filter: grayscale(0);
+  height: 110%;
 }
 
 #three {
   background-image: url("../img/landscape2.jpg");
+  scroll-margin-top: 0px;
+  height: 100vh;
+}
+
+#four {
+  height: calc(100vh - 60px);
+  scroll-margin-top: 0px;
+  overflow-x: hidden;
 }
 
 footer {
+  font-weight: bold;
   justify-content: center;
   color: rgb(240, 202, 132);
+}
+
+.top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  border: 3px double rgba(22, 155, 243, 0.993);
+}
+.top:hover {
+  border: 3px double #100cf0;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  max-width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+
+.div1 {
+  background-image: url("../img/arti.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 50%;
+  height: 200px;
+  min-height: 100px;
+  transition: ease-in-out 1s;
+}
+
+.div2 {
+  background-image: url("../img/bertolo.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 50%;
+  height: 200px;
+  transition: ease-in-out 1s;
+  margin: 0 1%;
+}
+
+.div3 {
+  background-image: url("../img/errin.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 50%;
+  height: 200px;
+  transition: ease-in-out 1s;
+  margin-right: 3%;
+}
+
+.div4 {
+  background-image: url("../img/ezra.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 50%;
+  height: 200px;
+  transition: ease-in-out 1s;
+  margin-right: 3%;
+}
+
+.div5 {
+  background-image: url("../img/pixabay.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 50%;
+  height: 200px;
+  transition: ease-in-out 1s;
+}
+
+input {
+  position: absolute;
+}
+
+#rad1 {
+  right: 56%;
+  bottom: 1%;
+}
+
+#rad2 {
+  right: 52%;
+  bottom: 1%;
+}
+
+#rad3 {
+  right: 48%;
+  bottom: 1%;
+}
+
+#rad4 {
+  right: 44%;
+  bottom: 1%;
+}
+
+#rad5 {
+  right: 40%;
+  bottom: 1%;
+}
+
+#rad1:checked ~ .div1 {
+  margin-left: 0%;
+}
+
+#rad2:checked ~ .div1 {
+  margin-left: -50%;
+}
+
+#rad3:checked ~ .div1 {
+  margin-left: -100%;
+}
+
+#rad4:checked ~ .div1 {
+  margin-left: -150%;
+}
+
+#rad5:checked ~ .div1 {
+  margin-left: -200%;
+}
+
+#rad1:checked ~ .div1 {
+  min-width: 100%;
+  height: 50vh;
+  margin-right: 3%;
+}
+
+#rad2:checked ~ .div2 {
+  min-width: 100%;
+  height: 50vh;
+}
+
+#rad3:checked ~ .div3 {
+  min-width: 100%;
+  height: 50vh;
+  margin: 0 3%;
+}
+
+#rad3:checked ~ .div1 {
+  visibility: hidden;
+}
+
+#rad4:checked ~ .div4 {
+  min-width: 100%;
+  height: 50vh;
+}
+
+#rad4:checked ~ .div2 {
+  visibility: hidden;
+}
+
+#rad5:checked ~ .div5 {
+  min-width: 100%;
+  height: 50vh;
+}
+
+#rad5:checked ~ .div3 {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
