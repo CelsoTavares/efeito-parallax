@@ -245,6 +245,7 @@ footer {
 
 input {
   position: absolute;
+  cursor: pointer;
 }
 
 #rad1 {
