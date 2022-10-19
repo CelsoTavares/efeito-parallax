@@ -217,7 +217,7 @@ footer {
 }
 .section div {
   border-radius: 10px;
-  margin: 5% 1% 1% 0;
+  margin: 5% 1%;
   transition: ease-in-out 1s;
   background-size: cover;
   background-position: center;
