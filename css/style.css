@@ -84,7 +84,7 @@ h2 {
   font-size: max(35px, 3vw);
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.95);
-  padding: 2%;
+  padding: 20px;
   width: 100%;
   background: rgba(0, 0, 0, 0.95);
 }
