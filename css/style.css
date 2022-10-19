@@ -67,7 +67,7 @@ body {
 
 #icons {
   width: 90%;
-  margin-top: 30px 
+  margin-top: 30px; 
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
