@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4d0000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border: 1px solid #ff3333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,17 +58,13 @@ body {
   background: rgba(0, 0, 0, 0.95);
 }
 #one, #three {
-  height: calc(100vh - 60px);
+  height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
   text-align: center;
   background-image: url("../img/landscape1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  scroll-margin-top: 60px;
   overflow-x: hidden;
 }
 #one p, #three p {
@@ -62,15 +76,20 @@ body {
   line-height: 22px;
   padding: 4%;
 }
-#icons {
+#container {
   width: 90%;
-  margin-top: 30px;
+  margin: 30px auto;
 
   display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-end;
+  justify-content: space-between;
   cursor: pointer;
 }
+#icons {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
 #icon {
   color: rgba(255, 255, 255, 0.95);
   font-size: min(2rem, 4vw);
@@ -78,7 +97,7 @@ body {
   margin: 20px 0;
 }
 #icon:hover {
-  box-shadow: 5px 5px 1px rgba(50, 224, 15, 0.95);
+  box-shadow: 5px 5px 1px #ff0000;
 }
 h2 {
   font-size: max(35px, 3vw);
@@ -93,13 +112,7 @@ h2 {
   max-width: 260px;
   border-radius: 2% 20% 2% 2%;
   background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  position: absolute;
-  width: 100%;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  margin-top: 5%;
-  left: 5%;
-  top: 20%;
 }
 #text::after {
   content: "|";
@@ -126,6 +139,7 @@ h2 {
   margin: 100px 5%;
   justify-content: space-between;
   height: 50%;
+  overflow: hidden;
 }
 .two-div div {
   width: 30%;
@@ -168,11 +182,9 @@ h2 {
 }
 #three {
   background-image: url("../img/landscape2.jpg");
-  scroll-margin-top: 0px;
 }
 #four {
   height: calc(100vh - 60px);
-  scroll-margin-top: 0px;
   overflow-x: hidden;
 }
 footer {
@@ -187,7 +199,7 @@ footer {
   right: 8px;
 }
 #seta {
-  color: rgba(255, 255, 255, 0.95);
+  color: #ff0000;
   background: rgba(0, 0, 0, 0.95);
   padding: 5px;
   transition: all 0.5s;
