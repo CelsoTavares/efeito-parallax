@@ -52,6 +52,7 @@ body {
   font-size: min(14px, 3vw);
   font-weight: bold;
   padding: 5px;
+  transition: all 0.5s;
 }
 .nav a:hover, footer a:hover {
   color: rgba(255, 255, 255, 0.95);
@@ -79,7 +80,6 @@ body {
 #container {
   width: 90%;
   margin: 30px auto;
-
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -88,13 +88,12 @@ body {
   display: flex;
   flex-flow: column nowrap;
 }
-
-
 #icon {
   color: rgba(255, 255, 255, 0.95);
   font-size: min(2rem, 4vw);
   box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.95);
   margin: 20px 0;
+  transition: all 0.5s;
 }
 #icon:hover {
   box-shadow: 5px 5px 1px rgba(255, 255, 255, 0.95);
