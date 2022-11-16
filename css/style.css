@@ -8,7 +8,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: black;
-  border: 1px solid #ff3333;
+  border: 1px solid rgba(255, 255, 255, 0.95);
   border-radius: 10px;
 }
 
@@ -199,7 +199,7 @@ footer {
   right: 8px;
 }
 #seta {
-  color: #ff0000;
+  color: rgba(255, 255, 255, 0.95);
   background: rgba(0, 0, 0, 0.95);
   padding: 5px;
   transition: all 0.5s;
